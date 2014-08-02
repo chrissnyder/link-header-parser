@@ -1,0 +1,11 @@
+{
+  "name": "link-header-parser",
+  "version": "0.0.1",
+  "description": "Link Header parser",
+  "main": "lib/index.js",
+  "author": "chrissnyder",
+  "license": "MIT",
+  "scripts": {
+    "start": "coffee -o lib/ -cw src/"
+  }
+}
