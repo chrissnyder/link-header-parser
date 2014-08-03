@@ -1,6 +1,6 @@
 {
   "name": "link-header-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Link Header parser",
   "main": "lib/index.js",
   "author": "chrissnyder",
