@@ -1,4 +1,5 @@
 module.exports = (rawLinkHeader) ->
+  return false unless rawLinkHeader
   links = {}
 
   rawLinks = rawLinkHeader.split ','
@@ -8,7 +9,7 @@ module.exports = (rawLinkHeader) ->
     attributes = {}
 
     for rawAttribute in rawAttributes
-      [match, attributeKey, attributeValue, index, input] = rawAttribute.match(/^(\w+)\*?=\"(\S+)\"$/)
+      [match, attributeKey, attributeValue, index, input] = rawAttribute.match(/^(\w+)\*?=\"(.*)\"$/)
 
       if attributeKey is 'rel'
         rel = attributeValue
