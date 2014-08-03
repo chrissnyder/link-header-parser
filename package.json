@@ -7,10 +7,11 @@
   "license": "MIT",
   "scripts": {
     "start": "coffee -o lib/ -cw src/",
-    "test": "mocha"
+    "test": "mocha --compilers coffee:coffee-script/register"
   },
   "devDependencies": {
     "mocha": "~1.21.3",
-    "should": "~4.0.4"
+    "should": "~4.0.4",
+    "coffee-script": "~1.7.1"
   }
 }
