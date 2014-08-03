@@ -6,6 +6,11 @@
   "author": "chrissnyder",
   "license": "MIT",
   "scripts": {
-    "start": "coffee -o lib/ -cw src/"
+    "start": "coffee -o lib/ -cw src/",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.3",
+    "should": "~4.0.4"
   }
 }
